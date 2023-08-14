@@ -3,6 +3,7 @@ import GameConfig from "./GameConfig";
 import LineManager from "./LineManager";
 import SoundManager from "./UI/SoundManager";
 
+
 const {ccclass, property} = cc._decorator;
 
 @ccclass
@@ -46,8 +47,9 @@ export default class GameManager extends cc.Component {
     @property(cc.SpriteFrame)
     public brush: cc.Sprite = null;
 
-    public reachLevel : number = 1; 
-    
+    public reachLevel : number = 40; 
+    @property(cc.Node)
+    tutorialDlg: cc.Node = null;
     private maxLevel: number = 300;
     countValue = 0;
     private timeCheck : number;
@@ -69,6 +71,11 @@ export default class GameManager extends cc.Component {
     rightFireworkContainer: cc.Node = null;
     @property(cc.Node)
     nextLevelButton: cc.Node = null
+    @property(cc.Node)
+    btnHint: cc.Node = null;
+    @property(cc.Node)
+    btnTutorial: cc.Node = null;
+
     @property(cc.Node)
     completeDlg: cc.Node = null;
     
@@ -100,6 +107,8 @@ export default class GameManager extends cc.Component {
         cc.director.getCollisionManager().enabled = true;
         
         this.nextLevelButton.on('click', this.NextLevel, this);
+        this.btnTutorial.on('click', this.showTutorial,this);
+        
     }
     
     start () {
@@ -238,6 +247,11 @@ export default class GameManager extends cc.Component {
         let self = this;
         this.timeStart.node.active = false;
         GameManager.instance.loadLevel(self.reachLevel);
+    }
+    showTutorial()
+    {
+        this.tutorialDlg.active = true;
+
     }
 
 }

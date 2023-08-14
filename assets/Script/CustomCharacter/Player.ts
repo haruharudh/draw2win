@@ -50,6 +50,8 @@ export default class Player extends cc.Component {
     @property(cc.Node)
     sfxPlayer: cc.Node = null;
     @property(cc.Node)
+    sfxPlayer2: cc.Node = null;
+    @property(cc.Node)
     elementPlayer:cc.Node = null;
     @property
     isFalling: boolean = false;
@@ -326,6 +328,9 @@ export default class Player extends cc.Component {
         if(this.sfxPlayer != undefined){
             this.sfxPlayer.active = !this.sfxPlayer.active;
         }
+        if(this.sfxPlayer2 != undefined){
+            this.sfxPlayer2.active = !this.sfxPlayer2.active;
+        }
         if(this.charSprite[spriteState.Lose] !== undefined)
         {
             this.getComponent(cc.Sprite).spriteFrame = this.charSprite[spriteState.Lose];
@@ -362,6 +367,9 @@ export default class Player extends cc.Component {
     {
         if(this.sfxPlayer != undefined){
             this.sfxPlayer.active = !this.sfxPlayer.active;
+        }        
+        if(this.sfxPlayer2 != undefined){
+            this.sfxPlayer2.active = !this.sfxPlayer2.active;
         }
         if(this.charSprite[spriteState.Win] !== undefined)
         {

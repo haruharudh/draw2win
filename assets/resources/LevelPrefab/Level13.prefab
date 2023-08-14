@@ -932,7 +932,7 @@
     "sfxEnemyNode_2": null,
     "sfxPlayer": null,
     "elementPlayer": null,
-    "isFalling": false,
+    "isFalling": true,
     "spawnMulti_Obj": null,
     "isRemove": false,
     "_id": ""
@@ -1157,28 +1157,28 @@
       },
       {
         "__type__": "cc.Vec2",
-        "x": 20.1,
-        "y": -47.4
+        "x": 26.3,
+        "y": -47.8
       },
       {
         "__type__": "cc.Vec2",
-        "x": 17.8,
-        "y": 36.2
+        "x": 34,
+        "y": 21.5
       },
       {
         "__type__": "cc.Vec2",
-        "x": 59.3,
-        "y": 27.3
+        "x": 68.9,
+        "y": 22.2
       },
       {
         "__type__": "cc.Vec2",
-        "x": 55.8,
-        "y": 90.3
+        "x": 66.5,
+        "y": 92.5
       },
       {
         "__type__": "cc.Vec2",
-        "x": 49.9,
-        "y": 141.4
+        "x": 57.2,
+        "y": 150.2
       },
       {
         "__type__": "cc.Vec2",
@@ -1325,7 +1325,7 @@
       "__uuid__": "bb77d4c1-951c-42c6-be08-644783574910"
     },
     "hintText": "Stop the trap",
-    "timeChecking": 3,
+    "timeChecking": 5,
     "characterNode": {
       "__id__": 14
     },

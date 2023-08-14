@@ -1442,8 +1442,8 @@
     "weaponSprite": null,
     "force": {
       "__type__": "cc.Vec2",
-      "x": 100,
-      "y": 100
+      "x": 50,
+      "y": 50
     },
     "forceBullet": 0,
     "positionAddForce": {
@@ -1454,6 +1454,7 @@
     "sfxEnemyNode": null,
     "sfxEnemyNode_2": null,
     "sfxPlayer": null,
+    "sfxPlayer2": null,
     "elementPlayer": null,
     "isFalling": true,
     "spawnMulti_Obj": null,

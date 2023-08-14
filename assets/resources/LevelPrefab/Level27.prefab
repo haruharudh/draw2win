@@ -1327,9 +1327,12 @@
     "sfxEnemyNode_2": {
       "__id__": 19
     },
-    "sfxPlayer": null,
+    "sfxPlayer": {
+      "__id__": 30
+    },
+    "sfxPlayer2": null,
     "elementPlayer": null,
-    "isFalling": false,
+    "isFalling": true,
     "spawnMulti_Obj": null,
     "isRemove": false,
     "_id": ""

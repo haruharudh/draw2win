@@ -997,7 +997,10 @@
     },
     "sfxEnemyNode": null,
     "sfxEnemyNode_2": null,
-    "sfxPlayer": null,
+    "sfxPlayer": {
+      "__id__": 20
+    },
+    "sfxPlayer2": null,
     "elementPlayer": null,
     "isFalling": false,
     "spawnMulti_Obj": null,

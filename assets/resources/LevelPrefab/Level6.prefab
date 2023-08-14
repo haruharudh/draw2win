@@ -140,7 +140,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        -540.455,
+        -558.439,
         -86.849,
         0,
         0,
@@ -231,7 +231,7 @@
       "y": 0
     },
     "_angularVelocity": 0,
-    "_fixedRotation": false,
+    "_fixedRotation": true,
     "enabledContactListener": false,
     "bullet": false,
     "awakeOnLoad": true,
@@ -480,7 +480,7 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        555.089,
+        580.548,
         -86.849,
         0,
         0,
@@ -571,7 +571,7 @@
       "y": 0
     },
     "_angularVelocity": 0,
-    "_fixedRotation": false,
+    "_fixedRotation": true,
     "enabledContactListener": false,
     "bullet": false,
     "awakeOnLoad": true,
@@ -994,17 +994,25 @@
       "x": 0,
       "y": 0
     },
-    "posForBullet_2": null,
+    "posForBullet_2": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
     "enermySprite": null,
     "enermySprite2": null,
     "weaponSprite": null,
     "force": {
       "__type__": "cc.Vec2",
-      "x": 5000,
-      "y": 5000
+      "x": 2000,
+      "y": 2000
     },
     "forceBullet": 0,
-    "positionAddForce": null,
+    "positionAddForce": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
     "sfxEnemyNode": null,
     "sfxEnemyNode_2": null,
     "sfxPlayer": null,

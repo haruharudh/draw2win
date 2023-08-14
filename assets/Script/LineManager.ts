@@ -42,7 +42,7 @@ export default class LineCollider extends cc.Component {
     toggleNode: cc.Node = null;
 
     protected pointGraphic: DrawLine = null;
-    // canShowTutorial: boolean = true;
+    canShowTutorial: boolean = true;
 
     private pointNode: cc.Node = null;
 
