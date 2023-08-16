@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "d4b5deb5-b1c4-4f2b-aaf6-85b43782b076",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 1024,
+  "height": 1024,
+  "platformSettings": {},
+  "subMetas": {
+    "kisspng-traffic-sign-road-transport": {
+      "ver": "1.0.6",
+      "uuid": "8111e6db-f7a3-4c92-baaa-0d9ef67cd922",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "d4b5deb5-b1c4-4f2b-aaf6-85b43782b076",
+      "trimType": "custom",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 1024,
+      "height": 1024,
+      "rawWidth": 1024,
+      "rawHeight": 1024,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

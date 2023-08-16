@@ -1,0 +1,41 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "level71_anim",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            -482.889,
+            -30.786,
+            0
+          ]
+        },
+        {
+          "frame": 0.4166666666666667,
+          "value": [
+            -390.747,
+            -51.057,
+            0
+          ]
+        },
+        {
+          "frame": 1,
+          "value": [
+            -390.747,
+            -51.057,
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "events": []
+}
