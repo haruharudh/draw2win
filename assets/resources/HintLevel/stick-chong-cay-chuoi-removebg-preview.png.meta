@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "a70677f5-bfa4-4a1b-b8a8-a29516677c01",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 429,
+  "height": 482,
+  "platformSettings": {},
+  "subMetas": {
+    "stick-chong-cay-chuoi-removebg-preview": {
+      "ver": "1.0.6",
+      "uuid": "7bf1123a-2ff3-48f6-b75c-33a097c76fb9",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "a70677f5-bfa4-4a1b-b8a8-a29516677c01",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -11,
+      "offsetY": 19.5,
+      "trimX": 41,
+      "trimY": 12,
+      "width": 325,
+      "height": 419,
+      "rawWidth": 429,
+      "rawHeight": 482,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

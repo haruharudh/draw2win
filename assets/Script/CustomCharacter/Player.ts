@@ -1,3 +1,4 @@
+
 import Common, { inGameState, spriteState } from "../Common";
 import GameConfig from "../GameConfig";
 import GameManager from "../GameManager";
@@ -50,15 +51,14 @@ export default class Player extends cc.Component {
     @property(cc.Node)
     sfxPlayer: cc.Node = null;
     @property(cc.Node)
-    sfxPlayer2: cc.Node = null;
-    @property(cc.Node)
     elementPlayer:cc.Node = null;
     @property
     isFalling: boolean = false;
+    @property
+    isHasTeleport: boolean = false;
+    @property(cc.Vec2)
+    positionTele: cc.Vec2 = null;
     startLevelAnim: cc.Node = null;
-
-    @property(cc.Prefab)
-    spawnMulti_Obj: cc.Prefab = null;
 
     @property
     isRemove: boolean = false;
@@ -72,10 +72,25 @@ export default class Player extends cc.Component {
         Common.instance.node.on(Common.instance.StartMovingEvent, this.startMoving, this);
         Common.instance.node.on(Common.instance.PassLevelEvent,this.onPass,this);
         Common.instance.node.on(Common.instance.FailLevelEvent,this.onFail,this);
+        //this.node.on('touchstart', this.onTouchStartAbove, this);
+        this.node.addComponent(cc.BlockInputEvents);
+        this.node.getComponent(cc.BlockInputEvents).enabled = true;
         this.initPos = this.node.position;
 
     }
-    
+    onTouchStartAbove(event: any) {
+        let localPos = this.node.convertToNodeSpaceAR(event.getLocation());
+        console.log("Player has Event");
+
+        if (this.node.getBoundingBox().contains(localPos)) {
+            // Xử lý sự kiện cho đối tượng ở trên
+            //event.stopPropagation();
+            console.log("background has Event");
+        }
+        // else {
+        //     event.stopPropagation(); // Ngăn chặn sự kiện lan tỏa lên đối tượng dưới
+        // }
+    }
     onDisable() {
         Common.instance.node.off(Common.instance.StartMovingEvent, this.startMoving, this);
         Common.instance.node.off(Common.instance.PassLevelEvent,this.onPass,this);
@@ -104,32 +119,38 @@ export default class Player extends cc.Component {
         }
         if(this.enermyNode != undefined){
             let rbEnermy = this.enermyNode.getComponent(cc.RigidBody);
-            
+            let enermyCom = this.enermyNode.getComponent(Enermy);
+
             if(rbEnermy != null ){
+                if (!enermyCom.getIsFalling){
+                    rbEnermy.type = cc.RigidBodyType.Dynamic;
+                    rbEnermy.linearVelocity = this.initVelocity;
+                }
                 
-                rbEnermy.type = cc.RigidBodyType.Dynamic;
-                rbEnermy.linearVelocity = this.initVelocity;
             }
             else if ( this.bullet != undefined ){
                 this.AdddForceForBullet();
             }
             this.AddForceForEnermy();
             this.MovingEnermy();
-            this.onSpawnMulti();
         }
         if(this.enermyNode_2 != undefined){
             let rbEnermy = this.enermyNode_2.getComponent(cc.RigidBody);
             
+            let enermyCom = this.enermyNode_2.getComponent(Enermy);
+
             if(rbEnermy != null ){
-                rbEnermy.type = cc.RigidBodyType.Dynamic;
-                rbEnermy.linearVelocity = this.initVelocity;
+                if (!enermyCom.getIsFalling){
+                    rbEnermy.type = cc.RigidBodyType.Dynamic;
+                    rbEnermy.linearVelocity = this.initVelocity;
+                }
+                
             }
             else if ( this.bullet != undefined ){
                 this.AdddForceForBullet2();
             }
             this.AddForceForEnermy2();
             this.MovingEnermy2();
-            this.onSpawnMulti();
         }
         if ( this.weaponSprite != undefined){
             if (this.charSprite[spriteState.Weapon] != undefined){
@@ -258,25 +279,6 @@ export default class Player extends cc.Component {
         m_bulletComp.AddForce(new cc.Vec2(x*this.forceBullet,y*this.forceBullet));
     }
 
-    onSpawnMulti()
-    {
-        if(this.enermyNode != undefined)
-        {
-            this.schedule(function ()
-            {
-                let multiObj = cc.instantiate(this.spawnMulti_Obj);
-                this.enermyNode.addChild(multiObj);
-            },0.5, cc.macro.REPEAT_FOREVER);
-        }
-        if(this.enermyNode_2 != undefined)
-        {
-            this.schedule(function ()
-            {
-                let multiObj = cc.instantiate(this.spawnMulti_Obj);
-                this.enermyNode_2.addChild(multiObj);
-            },0.5, cc.macro.REPEAT_FOREVER)
-        }
-    }
     update(dt: number){
         if(this.isStartMoving == undefined) return;
         this.counter += dt;
@@ -290,7 +292,14 @@ export default class Player extends cc.Component {
             }
         }
     }
-
+    Teleport():void{
+        if (this.isHasTeleport){
+            if ( this.positionTele != null){
+                this.node.position = new cc.Vec3(this.positionTele.x, this.positionTele.y,0);
+                this.node.getComponent(cc.RigidBody).applyForceToCenter(new cc.Vec2(50,0),true);
+            }
+        }
+    }
     onCollisionEnter(other,self)
     {
         if (GameConfig.gameState != inGameState.CHECKING) return;
@@ -298,6 +307,7 @@ export default class Player extends cc.Component {
         if(other.node.group == "Target")
         {
             console.log("in Target pass");
+            this.Teleport();
             GameConfig.gameState = inGameState.COMPLETED
             //this.node.getComponent(cc.PolygonCollider).enabled = false;
             Common.instance.node.emit("PassLevelEvent");
@@ -325,12 +335,6 @@ export default class Player extends cc.Component {
 
     onFail()
     {
-        if(this.sfxPlayer != undefined){
-            this.sfxPlayer.active = !this.sfxPlayer.active;
-        }
-        if(this.sfxPlayer2 != undefined){
-            this.sfxPlayer2.active = !this.sfxPlayer2.active;
-        }
         if(this.charSprite[spriteState.Lose] !== undefined)
         {
             this.getComponent(cc.Sprite).spriteFrame = this.charSprite[spriteState.Lose];
@@ -361,16 +365,13 @@ export default class Player extends cc.Component {
         if(this.elementPlayer != undefined){
             this.elementPlayer.active = !this.elementPlayer.active;
         }
+        if(this.sfxPlayer != undefined){
+            this.sfxPlayer.active = !this.sfxPlayer.active;
+        }
     }
 
     onPass()
     {
-        if(this.sfxPlayer != undefined){
-            this.sfxPlayer.active = !this.sfxPlayer.active;
-        }        
-        if(this.sfxPlayer2 != undefined){
-            this.sfxPlayer2.active = !this.sfxPlayer2.active;
-        }
         if(this.charSprite[spriteState.Win] !== undefined)
         {
             this.getComponent(cc.Sprite).spriteFrame = this.charSprite[spriteState.Win];
@@ -396,6 +397,9 @@ export default class Player extends cc.Component {
         }
         if(this.elementPlayer != undefined){
             this.elementPlayer.active = !this.elementPlayer.active;
+        }
+        if(this.sfxPlayer != undefined){
+            this.sfxPlayer.active = !this.sfxPlayer.active;
         }
     }
     resetGravity()

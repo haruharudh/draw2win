@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "6b1f2937-8075-4807-9ec8-9bc075895b37",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 507,
+  "height": 493,
+  "platformSettings": {},
+  "subMetas": {
+    "snowman-removebg-preview": {
+      "ver": "1.0.6",
+      "uuid": "edcc3a20-0d91-4ef4-9714-c2aa7469d6ca",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "6b1f2937-8075-4807-9ec8-9bc075895b37",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": 3,
+      "trimX": 113,
+      "trimY": 50,
+      "width": 279,
+      "height": 387,
+      "rawWidth": 507,
+      "rawHeight": 493,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

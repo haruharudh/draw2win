@@ -4857,6 +4857,7 @@
     "brush": {
       "__uuid__": "0d586255-639e-47c9-b9e1-2c5cbad2014a"
     },
+    "reachLevel": 21,
     "tutorialDlg": {
       "__id__": 73
     },

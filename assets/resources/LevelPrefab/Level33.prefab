@@ -33,17 +33,20 @@
         "__id__": 23
       },
       {
-        "__id__": 30
+        "__id__": 26
+      },
+      {
+        "__id__": 33
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 32
+        "__id__": 35
       }
     ],
     "_prefab": {
-      "__id__": 33
+      "__id__": 36
     },
     "_opacity": 255,
     "_color": {
@@ -94,7 +97,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "root",
+    "_name": "BG",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -330,7 +333,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "enemybegin",
+    "_name": "e",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -650,7 +653,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "vong",
+    "_name": "Player",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -888,9 +891,9 @@
     "sfxEnemyNode": null,
     "sfxEnemyNode_2": null,
     "sfxPlayer": null,
+    "sfxPlayer2": null,
     "elementPlayer": null,
     "isFalling": true,
-    "spawnMulti_Obj": null,
     "isRemove": false,
     "_id": ""
   },
@@ -907,30 +910,137 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Player",
+    "_name": "stick-thinking-removebg-preview",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 1
+    },
+    "_children": [],
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 24
+      }
+    ],
+    "_prefab": {
+      "__id__": 25
+    },
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 225,
+      "height": 436
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        -309.735,
+        -79.419,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 23
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_spriteFrame": {
+      "__uuid__": "4ec32f1c-8d9f-4693-b8dd-6e5aa27655dc"
+    },
+    "_type": 0,
+    "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_atlas": null,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 1
+    },
+    "asset": {
+      "__id__": 0
+    },
+    "fileId": "24Hg6XjlhGMJn/A4QCMw9a",
+    "sync": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "char2",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
     },
     "_children": [
       {
-        "__id__": 24
+        "__id__": 27
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 26
+        "__id__": 29
       },
       {
-        "__id__": 27
+        "__id__": 30
       },
       {
-        "__id__": 28
+        "__id__": 31
       }
     ],
     "_prefab": {
-      "__id__": 29
+      "__id__": 32
     },
     "_opacity": 255,
     "_color": {
@@ -984,13 +1094,13 @@
     "_name": "AnimNode",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 23
+      "__id__": 26
     },
     "_children": [],
     "_active": true,
     "_components": [],
     "_prefab": {
-      "__id__": 25
+      "__id__": 28
     },
     "_opacity": 255,
     "_color": {
@@ -1055,7 +1165,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 23
+      "__id__": 26
     },
     "_enabled": true,
     "_materials": [
@@ -1087,7 +1197,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 23
+      "__id__": 26
     },
     "_enabled": true,
     "_type": 0,
@@ -1112,11 +1222,11 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 23
+      "__id__": 26
     },
     "_enabled": true,
     "rb": {
-      "__id__": 27
+      "__id__": 30
     },
     "initVelocity": {
       "__type__": "cc.Vec2",
@@ -1141,7 +1251,7 @@
       }
     ],
     "aniNode": {
-      "__id__": 24
+      "__id__": 27
     },
     "enermyNode": {
       "__id__": 9
@@ -1175,9 +1285,9 @@
     "sfxEnemyNode": null,
     "sfxEnemyNode_2": null,
     "sfxPlayer": null,
+    "sfxPlayer2": null,
     "elementPlayer": null,
     "isFalling": true,
-    "spawnMulti_Obj": null,
     "isRemove": false,
     "_id": ""
   },
@@ -1203,7 +1313,7 @@
     "_active": true,
     "_components": [],
     "_prefab": {
-      "__id__": 31
+      "__id__": 34
     },
     "_opacity": 255,
     "_color": {
@@ -1272,7 +1382,7 @@
     },
     "_enabled": true,
     "handDrawNode": {
-      "__id__": 30
+      "__id__": 33
     },
     "pointGraphicPrefab": {
       "__uuid__": "bb77d4c1-951c-42c6-be08-644783574910"
@@ -1280,12 +1390,15 @@
     "hintText": "Don't let him cut the hammock",
     "timeChecking": 3,
     "characterNode": {
-      "__id__": 23
+      "__id__": 26
     },
     "isCanTouchDrawLine": true,
     "isMeetTargetLevel": false,
     "isToggleNewAnim": false,
     "isToggleOnWall": true,
+    "hintLevel": {
+      "__id__": 23
+    },
     "_id": ""
   },
   {

@@ -1,0 +1,38 @@
+{
+  "ver": "2.3.7",
+  "uuid": "de4c215f-f8d9-4ef6-b2a8-6e034fa303b5",
+  "importer": "texture",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 655,
+  "height": 381,
+  "platformSettings": {},
+  "subMetas": {
+    "stick-nhay-day-removebg-preview": {
+      "ver": "1.0.6",
+      "uuid": "59d8cfac-ecad-4808-9011-0fabcbd24d98",
+      "importer": "sprite-frame",
+      "rawTextureUuid": "de4c215f-f8d9-4ef6-b2a8-6e034fa303b5",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -11.5,
+      "offsetY": -36.5,
+      "trimX": 41,
+      "trimY": 99,
+      "width": 550,
+      "height": 256,
+      "rawWidth": 655,
+      "rawHeight": 381,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

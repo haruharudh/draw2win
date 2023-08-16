@@ -42,7 +42,7 @@ export default class LineCollider extends cc.Component {
     toggleNode: cc.Node = null;
 
     protected pointGraphic: DrawLine = null;
-    canShowTutorial: boolean = true;
+    // canShowTutorial: boolean = true;
 
     private pointNode: cc.Node = null;
 
@@ -53,7 +53,8 @@ export default class LineCollider extends cc.Component {
     public isToggleOnWall: boolean = true;
 
     private hasDrawnLine: boolean = false;
-
+    @property
+    isMoving: boolean = false;
 
 
     onLoad() {
@@ -70,11 +71,15 @@ export default class LineCollider extends cc.Component {
     StartTouch(event: cc.Event.EventTouch) {
         if (GameConfig.gameState != inGameState.PLAYING) return;
         let pos = event.touch.getLocation();
+        console.log("value of pos start: " + pos);
         let n_pos = this.handDrawNode.convertToNodeSpaceAR(pos);
         this.pointNode.parent = this.handDrawNode;
         this.pointNode.active = true;
         this.pointNode.setPosition(n_pos);
         this.createPointGraphics(n_pos);
+        this.isMoving = true;
+        this._drawNode.addComponent(cc.RigidBody);
+        this._drawNode.getComponent(cc.RigidBody).type = cc.RigidBodyType.Static;
     }
 
     private _tempPos = null;
@@ -82,7 +87,24 @@ export default class LineCollider extends cc.Component {
     TouchMove(event: cc.Event.EventTouch) {
         if (GameConfig.gameState != inGameState.PLAYING) return;
         if (!this._drawNode) return;
+        //console.log("value of isCollieWhilePlaying in LineManager: " + this.pointGraphic.isColliderWhilePlaying);
+       
+        if(this.pointGraphic.getIsCollideWhilePlaying){
+            //console.log("value of tempos: " + this._tempPos);
+            let tmpPos = event.touch.getLocation();
+            let pos1 = this.handDrawNode.convertToNodeSpaceAR(tmpPos);
+            console.log("position of mouse: " + pos1);
+            if(this.node.getChildByName(this.pointGraphic.getNameCollider) != null){
+                console.log("Has Player in LineManager");
+                //this.CheckCutPolygonCollider(this._tempPos, event.getLocation());
+                if (!this.CheckCutPolygonCollider(this._tempPos, event.getLocation(),this.pointGraphic.getNameCollider )){
+                    this.pointGraphic.setIsCollierWhilePlaying = false;
+                }
+                
+            }
 
+            return;
+        }
         let pos = event.touch.getLocation();
         let n_pos = this.handDrawNode.convertToNodeSpaceAR(pos);
         this.pointNode.active = true;
@@ -95,19 +117,68 @@ export default class LineCollider extends cc.Component {
             if (distance >= 8) {
                 distance = this._jugement(n_pos);
                 if (distance >= 8) {
-                    this.pointGraphic.updateDrawPoints(n_pos);
-                    this._tempPos = n_pos;
+                    let check = false;
+                    if ( this.node.getChildByName("e") != null ){
+                       if (this.CheckCutPolygonCollider(this._tempPos, event.getLocation(),"e")){
+                            check = true;   
+                       }
+                    }
+                    if ( this.node.getChildByName("e1") != null ){
+                        if (this.CheckCutPolygonCollider(this._tempPos, event.getLocation(),"e2")){
+                             check = true;   
+                        }
+                    }
+                    if ( this.node.getChildByName("BG2") != null ){
+                        if (this.CheckCutPolygonCollider(this._tempPos, event.getLocation(),"BG2")){
+                             check = true;   
+                        }
+                    }
+                    if(this.CheckCutPolygonCollider(this._tempPos, event.getLocation(), "Player")){
+                        check = true;
+                    }
+                    if(this.CheckCutPolygonCollider(this._tempPos, event.getLocation(), "BG")){
+                        check = true;
+                    }
+                    if ( check == false){
+                        this.pointGraphic.updateDrawPoints(n_pos);
+                        this._tempPos = n_pos;
+                        this.addPhyscisComponent();
+                    }
+                    //console.log("value of n_pos: " + n_pos);
+                    
                 }
             }
+        }
     }
-    }
-
+    
     EndTouch() {
         if (GameConfig.gameState != inGameState.PLAYING) return;
         this.startMoving(); 
-
     }
-    
+    CheckCutPolygonCollider(point1: cc.Vec2, point2:cc.Vec2, name: string): boolean{
+        console.log("value of Point1: " + point1);
+        console.log("value of Point2: " + point2);
+        const objectWithCollider: cc.Node = this.node.getChildByName(name);
+        const collider: cc.PolygonCollider = objectWithCollider.getComponent(cc.PolygonCollider);
+
+        if (collider) {
+            const worldPoint = this.node.convertToWorldSpaceAR(point1);
+            const mousePoint = objectWithCollider.convertToWorldSpaceAR(point2);
+            console.log("value of worldPoint: " + worldPoint);
+            console.log("value of mousePoint: " + mousePoint);
+            const colliderWorldPoints = collider.world.points;
+            console.log("length of colliderWorldPoint: " + colliderWorldPoints.length);
+            for (let i = 0; i < colliderWorldPoints.length; i++) {
+                const p1 = colliderWorldPoints[i];
+                const p2 = colliderWorldPoints[(i + 1) % colliderWorldPoints.length];
+                if (cc.Intersection.lineLine(p1, p2, point2, worldPoint)) {
+                    console.log("Intersection detected with PolygonCollider!");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
     private _jugement(pos: cc.Vec2) {
         let distance = 100;
         for (let i = 0; i < this._posList.length; i++) {
@@ -118,15 +189,25 @@ export default class LineCollider extends cc.Component {
         return distance;
     }
 
+    addPhyscisComponent(): void{
+        this._posList = this.pointGraphic.getListPoint();
+        if (this._posList.length > 2){
+            let post_1 = this._posList[this._posList.length-1];
+            let post_2 = this._posList[this._posList.length-2];
+            this.addRectangleBetweenPointsToBody(this._drawNode,post_1,post_2);
+        }
+    }
     startMoving() {
         //Add physical
-        let self = this;
-        this._posList = this.pointGraphic.getListPoint();
-        this._addPhysices(function () {
-            self.DoCheckingComplete();
-        });
+        // let self = this;
+        // this._posList = this.pointGraphic.getListPoint();
+        // this._addPhysices(function () {
+        //     self.DoCheckingComplete();
+        // });
+        this._drawNode.getComponent(cc.RigidBody).type = cc.RigidBodyType.Dynamic;
+        this.DoCheckingComplete();
     }
-
+    
     DoCheckingComplete()
     {
         GameConfig.gameState = inGameState.CHECKING;
@@ -135,13 +216,16 @@ export default class LineCollider extends cc.Component {
     }
     public _addPhysices(callback: any) {
         this._drawNode.removeAllChildren(true);
+        // this._drawNode.removeComponent(cc.RigidBody);
+        // this._drawNode.removeComponent(cc.PolygonCollider);
+        // this._drawNode.removeComponent(cc.PhysicsPolygonCollider);
         this.addBoxPhysic(this._drawNode);
         callback();
     }
     addBoxPhysic(g: cc.Node) {
         try {
             g.addComponent(cc.RigidBody);
-            g.getComponent(cc.RigidBody).type = cc.RigidBodyType.Dynamic;
+            g.getComponent(cc.RigidBody).type = cc.RigidBodyType.Static;
             for (let i = 0; i < this._posList.length - 1; i++) {
                 let point1 = this._posList[i];
                 let point2 = this._posList[i + 1];
@@ -152,6 +236,8 @@ export default class LineCollider extends cc.Component {
             return;
         }
     }
+   
+   
 
 
     addRectangleBetweenPointsToBody(b2Body: cc.Node, start: cc.Vec2, end: cc.Vec2) {

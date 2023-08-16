@@ -33,20 +33,23 @@
         "__id__": 22
       },
       {
-        "__id__": 28
+        "__id__": 25
       },
       {
-        "__id__": 37
+        "__id__": 31
+      },
+      {
+        "__id__": 40
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 39
+        "__id__": 42
       }
     ],
     "_prefab": {
-      "__id__": 40
+      "__id__": 43
     },
     "_opacity": 255,
     "_color": {
@@ -97,7 +100,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "bg_d166",
+    "_name": "BG",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -223,7 +226,7 @@
     "_id": ""
   },
   {
-    "__type__": "cc.PhysicsBoxCollider",
+    "__type__": "cc.PhysicsPolygonCollider",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -239,13 +242,30 @@
     "_offset": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": -396
+      "y": 0
     },
-    "_size": {
-      "__type__": "cc.Size",
-      "width": 1100,
-      "height": 58
-    },
+    "points": [
+      {
+        "__type__": "cc.Vec2",
+        "x": -546,
+        "y": -426
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 547,
+        "y": -423
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 543,
+        "y": -329
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": -543,
+        "y": -331
+      }
+    ],
     "_id": ""
   },
   {
@@ -368,7 +388,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "day",
+    "_name": "BG2",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -494,7 +514,7 @@
     "_id": ""
   },
   {
-    "__type__": "cc.PhysicsBoxCollider",
+    "__type__": "cc.PhysicsPolygonCollider",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -512,11 +532,28 @@
       "x": 0,
       "y": 0
     },
-    "_size": {
-      "__type__": "cc.Size",
-      "width": 800,
-      "height": 19
-    },
+    "points": [
+      {
+        "__type__": "cc.Vec2",
+        "x": -396,
+        "y": -9
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 394,
+        "y": -5
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 393,
+        "y": 8
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": -396,
+        "y": 6
+      }
+    ],
     "_id": ""
   },
   {
@@ -532,7 +569,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "vien_da",
+    "_name": "e",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -782,6 +819,113 @@
   },
   {
     "__type__": "cc.Node",
+    "_name": "stick-thu-the",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 1
+    },
+    "_children": [],
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 23
+      }
+    ],
+    "_prefab": {
+      "__id__": 24
+    },
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 270,
+      "height": 382
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_trs": {
+      "__type__": "TypedArray",
+      "ctor": "Float64Array",
+      "array": [
+        82.066,
+        74.124,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1,
+        1,
+        1
+      ]
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "_groupIndex": 0,
+    "groupIndex": 0,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 22
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_spriteFrame": {
+      "__uuid__": "02a1387a-e1b8-453b-8fc4-c5852dd4e8e5"
+    },
+    "_type": 0,
+    "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_atlas": null,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 1
+    },
+    "asset": {
+      "__id__": 0
+    },
+    "fileId": "e5aD30wtdMhLIN/B9Vvhp9",
+    "sync": false
+  },
+  {
+    "__type__": "cc.Node",
     "_name": "man",
     "_objFlags": 0,
     "_parent": {
@@ -789,17 +933,17 @@
     },
     "_children": [
       {
-        "__id__": 23
+        "__id__": 26
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 26
+        "__id__": 29
       }
     ],
     "_prefab": {
-      "__id__": 27
+      "__id__": 30
     },
     "_opacity": 255,
     "_color": {
@@ -853,17 +997,17 @@
     "_name": "sung",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 22
+      "__id__": 25
     },
     "_children": [],
     "_active": true,
     "_components": [
       {
-        "__id__": 24
+        "__id__": 27
       }
     ],
     "_prefab": {
-      "__id__": 25
+      "__id__": 28
     },
     "_opacity": 255,
     "_color": {
@@ -917,7 +1061,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 23
+      "__id__": 26
     },
     "_enabled": true,
     "_materials": [
@@ -960,7 +1104,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 22
+      "__id__": 25
     },
     "_enabled": true,
     "_materials": [
@@ -1007,29 +1151,29 @@
     },
     "_children": [
       {
-        "__id__": 29
+        "__id__": 32
       }
     ],
     "_active": true,
     "_components": [
       {
-        "__id__": 31
-      },
-      {
-        "__id__": 32
-      },
-      {
-        "__id__": 33
-      },
-      {
         "__id__": 34
       },
       {
         "__id__": 35
+      },
+      {
+        "__id__": 36
+      },
+      {
+        "__id__": 37
+      },
+      {
+        "__id__": 38
       }
     ],
     "_prefab": {
-      "__id__": 36
+      "__id__": 39
     },
     "_opacity": 255,
     "_color": {
@@ -1083,13 +1227,13 @@
     "_name": "AnimNode",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 28
+      "__id__": 31
     },
     "_children": [],
     "_active": true,
     "_components": [],
     "_prefab": {
-      "__id__": 30
+      "__id__": 33
     },
     "_opacity": 255,
     "_color": {
@@ -1154,7 +1298,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 28
+      "__id__": 31
     },
     "_enabled": true,
     "_materials": [
@@ -1186,7 +1330,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 28
+      "__id__": 31
     },
     "_enabled": true,
     "_type": 0,
@@ -1211,11 +1355,11 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 28
+      "__id__": 31
     },
     "_enabled": true,
     "rb": {
-      "__id__": 32
+      "__id__": 35
     },
     "initVelocity": {
       "__type__": "cc.Vec2",
@@ -1240,10 +1384,10 @@
       }
     ],
     "aniNode": {
-      "__id__": 29
+      "__id__": 32
     },
     "enermyNode": {
-      "__id__": 22
+      "__id__": 25
     },
     "enermyNode_2": {
       "__id__": 15
@@ -1278,10 +1422,9 @@
     "sfxPlayer": null,
     "sfxPlayer2": null,
     "elementPlayer": {
-      "__id__": 23
+      "__id__": 26
     },
     "isFalling": true,
-    "spawnMulti_Obj": null,
     "isRemove": false,
     "_id": ""
   },
@@ -1290,7 +1433,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 28
+      "__id__": 31
     },
     "_enabled": true,
     "tag": 0,
@@ -1443,7 +1586,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 28
+      "__id__": 31
     },
     "_enabled": true,
     "tag": 0,
@@ -1498,7 +1641,7 @@
     "_active": true,
     "_components": [],
     "_prefab": {
-      "__id__": 38
+      "__id__": 41
     },
     "_opacity": 255,
     "_color": {
@@ -1567,7 +1710,7 @@
     },
     "_enabled": true,
     "handDrawNode": {
-      "__id__": 37
+      "__id__": 40
     },
     "pointGraphicPrefab": {
       "__uuid__": "bb77d4c1-951c-42c6-be08-644783574910"
@@ -1575,12 +1718,15 @@
     "hintText": "Protect him from the stone",
     "timeChecking": 3,
     "characterNode": {
-      "__id__": 28
+      "__id__": 31
     },
     "isCanTouchDrawLine": true,
     "isMeetTargetLevel": false,
     "isToggleNewAnim": false,
     "isToggleOnWall": true,
+    "hintLevel": {
+      "__id__": 22
+    },
     "_id": ""
   },
   {
