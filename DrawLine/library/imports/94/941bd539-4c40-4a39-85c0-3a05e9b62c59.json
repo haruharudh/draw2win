@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "tut2",
+    "texture": "862eb304-99d8-492d-928b-cbeec44bd833",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      546,
+      394
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      546,
+      394
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "level67Enermy_anim",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            -517.9,
+            419.016,
+            0
+          ]
+        },
+        {
+          "frame": 0.3333333333333333,
+          "value": [
+            -452.124,
+            359.658,
+            0
+          ]
+        },
+        {
+          "frame": 1,
+          "value": [
+            -452.124,
+            359.658,
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "events": []
+}

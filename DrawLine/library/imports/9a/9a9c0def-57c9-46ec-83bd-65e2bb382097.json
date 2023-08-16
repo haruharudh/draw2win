@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Layer 40 copy",
+    "texture": "f374e99d-d108-4c16-9872-13982f7131ba",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      17,
+      28
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      17,
+      28
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

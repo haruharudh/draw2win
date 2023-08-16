@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "manlose",
+    "texture": "ad02d0ac-aa99-4ec4-adf9-c089809b946f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      174,
+      420
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      174,
+      420
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "wpfx",
+    "texture": "09313000-f96b-48f0-9dc5-a35be6223097",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      26,
+      31
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      26,
+      31
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "manfx",
+    "texture": "ab678e3f-4d94-4ebd-b51f-8dcee947eb22",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      100,
+      49
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      100,
+      49
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

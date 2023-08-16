@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "trap_thung_thuoc_no",
+    "texture": "74cb1aa0-476d-425c-97be-e011c0374af6",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      171,
+      213
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      171,
+      213
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

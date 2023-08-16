@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "trap_luoi_cua",
+    "texture": "7dc4fde8-81ae-4e65-a3a0-02cbd0613075",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      194,
+      192
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      194,
+      192
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

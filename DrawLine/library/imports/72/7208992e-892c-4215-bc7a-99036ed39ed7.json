@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bg_vuon_d4",
+    "texture": "6c97e709-b8bd-4701-bf62-44327ab94bbb",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      720,
+      844
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      720,
+      844
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

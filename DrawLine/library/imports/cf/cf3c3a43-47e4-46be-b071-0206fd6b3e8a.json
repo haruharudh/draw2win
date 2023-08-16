@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "man win",
+    "texture": "511cb9a5-68df-45ec-92e5-50c566b897a7",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      134,
+      356
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      134,
+      356
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

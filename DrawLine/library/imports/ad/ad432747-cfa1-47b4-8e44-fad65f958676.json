@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "manwin",
+    "texture": "7f441107-c03d-4194-ae2d-27be77aad81f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      112,
+      266
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      112,
+      266
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

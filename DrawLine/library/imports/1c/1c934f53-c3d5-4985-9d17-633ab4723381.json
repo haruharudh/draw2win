@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "den_chum_d2",
+    "texture": "002aa2bd-4897-456b-afc0-84c2134985ce",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      137,
+      140
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      137,
+      140
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

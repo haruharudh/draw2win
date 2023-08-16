@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "shock",
+    "texture": "1a5aa3f9-f1d9-406b-b985-74fb53966d35",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      61,
+      63
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      61,
+      63
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

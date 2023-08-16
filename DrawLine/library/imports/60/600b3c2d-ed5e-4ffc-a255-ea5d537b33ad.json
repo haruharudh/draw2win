@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "cung ten 1",
+    "texture": "f4dd937d-750b-424a-b511-15421313cb14",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      50,
+      201
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      50,
+      201
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "beer1",
+    "texture": "7f78495e-8e48-4682-9bfb-e0af4a8bf327",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      62,
+      80
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      62,
+      80
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

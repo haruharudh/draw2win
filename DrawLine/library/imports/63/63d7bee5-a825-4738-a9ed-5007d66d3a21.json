@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "icTournament",
+    "texture": "536b3d0f-af4e-42eb-b37e-7e8fa6a90dc3",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      614,
+      565
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      614,
+      565
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

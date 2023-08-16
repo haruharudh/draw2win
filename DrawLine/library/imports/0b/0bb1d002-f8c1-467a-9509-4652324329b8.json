@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "cot_go",
+    "texture": "f666b12d-e35d-4647-8d9e-dec7c805a4a0",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      56,
+      518
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      56,
+      518
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

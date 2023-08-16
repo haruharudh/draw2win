@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "diem_neo_den",
+    "texture": "de54a299-92f6-489c-bcff-4d58a118bdc5",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      28,
+      69
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      28,
+      69
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

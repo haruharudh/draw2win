@@ -1,0 +1,55 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "BomExplode_anim",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 1.2666666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 0,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "12937fc7-8b02-494f-8035-d0c9c702101e"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "4635c59d-c651-4211-b268-978f0c59bbe0"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "a7dd20aa-cb8a-4310-9b17-7ff3ed6d28e7"
+            }
+          },
+          {
+            "frame": 0.75,
+            "value": {
+              "__uuid__": "53dcd181-0ae9-4d6b-aec6-1eba59ae161e"
+            }
+          },
+          {
+            "frame": 1,
+            "value": {
+              "__uuid__": "16b00adc-c2b9-456a-9702-6b3c3228307e"
+            }
+          },
+          {
+            "frame": 1.25,
+            "value": {
+              "__uuid__": "27f0a252-6865-49c3-aa36-9dcfd250682f"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

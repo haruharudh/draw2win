@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Teleport1",
+    "texture": "c9eb45f3-663d-4b34-98e8-03b642e7e044",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      267,
+      183
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      267,
+      183
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

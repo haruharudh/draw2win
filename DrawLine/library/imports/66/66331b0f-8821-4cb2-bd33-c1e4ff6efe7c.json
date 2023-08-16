@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Btn_ask",
+    "texture": "5e600557-d9aa-41fe-b430-7d62e06f14d3",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      151,
+      145
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      151,
+      145
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

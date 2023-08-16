@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "parabol",
+    "texture": "0bbe6fbc-505b-4544-b13a-72c27fc2f263",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      719,
+      419
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      719,
+      419
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

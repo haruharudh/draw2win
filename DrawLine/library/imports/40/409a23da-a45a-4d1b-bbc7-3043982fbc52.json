@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "qua_mo",
+    "texture": "a17a2573-e6e8-40a9-af0e-9c17aa2fcd72",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      140,
+      78
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      140,
+      78
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

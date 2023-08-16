@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "enemy lose",
+    "texture": "3a1d2597-91ee-4e8b-a253-1dc6cd2f3fd8",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      135,
+      318
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      135,
+      318
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

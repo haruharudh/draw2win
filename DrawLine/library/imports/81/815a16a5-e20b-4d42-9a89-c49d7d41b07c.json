@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "scare",
+    "texture": "0fe699de-af9b-4541-941b-dcb977d88af7",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      97,
+      100
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      97,
+      100
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

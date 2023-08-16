@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "enemylose",
+    "texture": "7fe32a10-8c14-48e9-ac43-89ef6b8b67aa",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      206,
+      364
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      206,
+      364
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

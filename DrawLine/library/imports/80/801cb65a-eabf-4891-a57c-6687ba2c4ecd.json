@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lose last",
+    "texture": "af5210b6-6ad1-452b-9c7d-843f8097d280",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      200,
+      264
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      200,
+      264
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

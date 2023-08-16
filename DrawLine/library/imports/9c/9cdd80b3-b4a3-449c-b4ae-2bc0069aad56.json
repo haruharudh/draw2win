@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "backgroundTut",
+    "texture": "c857ae7e-3725-4bcb-abba-cacca272d4f9",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      680,
+      985
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      680,
+      985
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

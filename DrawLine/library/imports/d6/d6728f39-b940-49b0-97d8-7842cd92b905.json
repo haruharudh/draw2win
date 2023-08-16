@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "man lose",
+    "texture": "cf2f0771-2a5f-40b4-9395-c6b9abfc61dd",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      193,
+      361
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      193,
+      361
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

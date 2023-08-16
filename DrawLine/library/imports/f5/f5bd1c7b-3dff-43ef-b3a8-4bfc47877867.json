@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "BGMusic_On",
+    "texture": "1b463781-231b-46b2-bc1a-6dbaab5c5146",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      69,
+      70
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      69,
+      70
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

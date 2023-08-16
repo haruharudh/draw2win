@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "cho ngu win",
+    "texture": "7b0f3a71-e9f7-4a92-b192-e01cfcb74b03",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      311,
+      198
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      311,
+      198
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

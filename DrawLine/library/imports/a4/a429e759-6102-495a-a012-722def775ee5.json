@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bat_trangthai2",
+    "texture": "72b9077d-e192-4cf2-bdb5-947e4beac6cf",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      232,
+      239
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      232,
+      239
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Tudien",
+    "texture": "44760664-fa50-4442-849f-06a28aaeeb01",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      156,
+      243
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      156,
+      243
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

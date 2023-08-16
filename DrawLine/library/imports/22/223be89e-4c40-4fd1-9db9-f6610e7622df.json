@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "man_trangthai3",
+    "texture": "491e0f71-a3cc-43d8-adab-bcb2e6862c20",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      113,
+      268
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      113,
+      268
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
